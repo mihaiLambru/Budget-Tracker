@@ -4,4 +4,7 @@
     <string name="passText">parolă</string>
     <string name="conectareButton">Conectare</string>
     <string name="inregButton">ÎNREGISTRARE</string>
+    <string name="numecontText">Nume cont</string>
+    <string name="tipText">Tip</string>
+    <string name="monedaText">Monedă</string>
 </resources>

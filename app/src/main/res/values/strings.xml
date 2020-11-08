@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Budget Tracker</string>
-    <string name="userNameText">username</string>
-    <string name="passText">password</string>
+    <string name="userNameText">utilizator</string>
+    <string name="passText">parolă</string>
+    <string name="conectareButton">Conectare</string>
+    <string name="inregButton">ÎNREGISTRARE</string>
 </resources>

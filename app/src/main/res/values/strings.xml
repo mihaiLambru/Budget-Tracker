@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Budget Tracker</string>
+    <string name="userNameText">username</string>
+    <string name="passText">password</string>
+</resources>

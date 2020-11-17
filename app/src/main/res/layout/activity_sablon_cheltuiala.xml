@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditareCont">
-
+    tools:context=".SablonCheltuiala">
     <androidx.core.widget.NestedScrollView
         android:id="@+id/EditareContScroll"
         android:layout_width="match_parent"
@@ -38,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/numecontText"
+                android:text="@string/numeText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +48,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:text="@string/tipText"
+                android:text="@string/SumaText"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -82,6 +81,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/tipEditText"
                 app:layout_constraintVertical_bias="0.0" />
 
+
             <Spinner
                 android:id="@+id/monedaSpinner"
                 android:layout_width="0dp"
@@ -89,82 +89,35 @@
                 android:entries="@array/Monede"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/MonedaText"
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/ContText"
+                android:id="@+id/contText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
-                android:text="@string/monedaText"
+                android:text="@string/contText"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/MonedaText"
+                app:layout_constraintHorizontal_bias="0.003"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/monedaSpinner"
                 app:layout_constraintVertical_bias="0.0" />
 
             <Spinner
                 android:id="@+id/ContSpinner"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ContText"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <TextView
-                android:id="@+id/BeneficiarText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="@string/BeneficiarText"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/ContText"
-                app:layout_constraintTop_toBottomOf="@+id/ContSpinner"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <AutoCompleteTextView
-                android:id="@+id/BeneficarEditText"
-                android:layout_width="0dp"
+                android:layout_width="380dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/BeneficiarText"
-                app:layout_constraintVertical_bias="0.0"
-                />
+                app:layout_constraintTop_toBottomOf="@+id/contText"
+                app:layout_constraintVertical_bias="1.0" />
 
-            <TextView
-                android:id="@+id/NotaText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="40dp"
-                android:text="@string/NotăText"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/BeneficiarText"
-                app:layout_constraintTop_toBottomOf="@+id/BeneficarEditText"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <androidx.appcompat.widget.AppCompatEditText
-                android:id="@+id/NotaEditText"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/NotaText"
-                app:layout_constraintVertical_bias="0.0"
-                />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

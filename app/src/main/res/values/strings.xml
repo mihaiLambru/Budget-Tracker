@@ -7,4 +7,10 @@
     <string name="numecontText">Nume cont</string>
     <string name="tipText">Tip</string>
     <string name="monedaText">Monedă</string>
+    <string name="numeText">Nume</string>
+    <string name="SumaText">Sumă</string>
+    <string name="contText">Cont</string>
+    <string name="BeneficiarValue">Beneficiar</string>
+    <string name="BeneficiarText">Beneficiar</string>
+    <string name="NotăText">Notă</string>
 </resources>

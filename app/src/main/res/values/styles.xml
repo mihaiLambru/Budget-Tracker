@@ -7,4 +7,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="CustomTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorCustomPrimary</item>
+        <item name="colorPrimaryDark">@color/colorCustomDarkPrimary</item>
+        <item name="colorAccent">@color/colorCustomAccent</item>
+    </style>
+
+    <style name="InfoStyle">
+        <item name="background">@drawable/rounded_text_view_green</item>
+    </style>
+
+
+
 </resources>

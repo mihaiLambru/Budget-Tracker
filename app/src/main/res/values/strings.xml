@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">Budget Tracker</string>
-    <string name="userNameText">utilizator</string>
-    <string name="passText">parolă</string>
+    <string name="userNameText">Utilizator</string>
+    <string name="passText">Parolă</string>
+    <string name="verificare_parola">Verificare parolă</string>
     <string name="conectareButton">Conectare</string>
     <string name="inregButton">ÎNREGISTRARE</string>
     <string name="numecontText">Nume cont</string>
@@ -13,4 +14,7 @@
     <string name="BeneficiarValue">Beneficiar</string>
     <string name="BeneficiarText">Beneficiar</string>
     <string name="NotăText">Notă</string>
+    <string name="info_register_page_bottom">Aveți deja cont? Dați click aici!</string>
+    <string name="info_register_page_top">Vă rugăm introduceți datele dumneavoastră pentru înregistrare</string>
+    <string name="termeni_conditii">Accept termenii si conditiile</string>
 </resources>

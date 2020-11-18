@@ -19,8 +19,8 @@ public class LogInActivity extends AppCompatActivity {
 
     public void inregistrateBtn(View view) {
         Intent intent=new Intent(getApplicationContext(),RegisterActivity.class);
-        EditText etUser=findViewById(R.id.loginUsername);
-        EditText etPass=findViewById(R.id.loginPassword);
+        EditText etUser=findViewById(R.id.textViewUsername);
+        EditText etPass=findViewById(R.id.textViewPassword);
         intent.putExtra("user",etUser.getText().toString());
         intent.putExtra("parola",etPass.getText().toString());
         startActivityForResult(intent, reqCodeRegisterActivity);

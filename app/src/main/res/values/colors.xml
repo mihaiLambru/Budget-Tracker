@@ -3,4 +3,10 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <!--Am adaugat 3 culori-->
+    <color name="colorCustomPrimary">#4CAF50</color>
+    <color name="colorCustomDarkPrimary">#388E3C</color>
+    <color name="colorCustomAccent">#D500F9</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
 </resources>

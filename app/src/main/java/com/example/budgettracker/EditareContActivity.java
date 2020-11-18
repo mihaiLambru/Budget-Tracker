@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class SablonCheltuiala extends AppCompatActivity {
+public class EditareContActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sablon_cheltuiala);
+        setContentView(R.layout.activity_editare_cont);
     }
 }

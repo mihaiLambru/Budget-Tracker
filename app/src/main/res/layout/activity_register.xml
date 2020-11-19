@@ -8,13 +8,13 @@
 
     <Button
         android:id="@+id/buttonRegister"
-        android:layout_width="158dp"
-        android:layout_height="59dp"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="124dp"
         android:onClick="inregistrateBtn"
         android:text="@string/inregButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
     <EditText
@@ -59,20 +59,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:layout_marginEnd="104dp"
         android:background="@drawable/rounded_text_view_green"
         android:gravity="center"
+        android:onClick="onClickToLogin"
         android:padding="5dp"
         android:text="@string/info_register_page_bottom"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:onClick="onClickToLogin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
 
     <TextView
         android:id="@+id/textViewInfoRegister"
-        android:layout_width="255dp"
+        android:layout_width="245dp"
         android:layout_height="98dp"
         android:layout_marginTop="72dp"
         android:fontFamily="sans-serif"

@@ -11,12 +11,8 @@
         <item name="colorPrimary">@color/colorCustomPrimary</item>
         <item name="colorPrimaryDark">@color/colorCustomDarkPrimary</item>
         <item name="colorAccent">@color/colorCustomAccent</item>
+        <item name="colorSecondary">@color/colorCustomAccent</item>
+        <item name="colorOnSecondary">@color/white</item>
     </style>
-
-    <style name="InfoStyle">
-        <item name="background">@drawable/rounded_text_view_green</item>
-    </style>
-
-
 
 </resources>

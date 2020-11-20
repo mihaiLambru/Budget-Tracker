@@ -9,11 +9,54 @@
     <fragment
         android:id="@+id/fragment3"
         android:name="com.example.budgettracker.WelcomeFragment1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="307dp"
+        android:layout_height="332dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.353" />
+
+    <android.widget.Button
+        android:id="@+id/smallWidget1"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/oval_shape_widget"
+        app:layout_constraintBottom_toBottomOf="@+id/smallWidget2"
+        app:layout_constraintEnd_toStartOf="@+id/smallWidget2"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/smallWidget2" />
+
+    <android.widget.Button
+        android:id="@+id/smallWidget2"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/oval_shape_widget"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment3" />
+
+    <android.widget.Button
+        android:id="@+id/smallWidget3"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/oval_shape_widget"
+        app:layout_constraintBottom_toBottomOf="@+id/smallWidget2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/smallWidget2"
+        app:layout_constraintTop_toTopOf="@+id/smallWidget2" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/continua"
+        android:onClick="onClickNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

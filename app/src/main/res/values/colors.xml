@@ -3,11 +3,15 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
-    <!--Am adaugat 3 culori-->
-    <color name="colorCustomPrimary">#4CAF50</color>
-    <color name="colorCustomDarkPrimary">#388E3C</color>
-    <color name="colorCustomAccent">#D500F9</color>
+    <color name="colorCustomPrimary">#278257</color>
+    <color name="colorCustomDarkPrimary">#125a38</color>
+    <color name="colorCustomAccent">#9e4f9e</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="black_overlay">#66000000</color>
+    <color name="bright_green">#458C67</color>
+    <color name="gray">#666666</color>
+    <color name="color_eur">#1470CC</color>
+    <color name="color_usd">#298C2F</color>
+    <color name="color_ron">#CC1F1F</color>
 </resources>

@@ -10,7 +10,7 @@
         android:id="@+id/buttonRegister"
         android:layout_width="wrap_content"
         android:layout_height="57dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:onClick="inregistrateBtn"
         android:text="@string/inregButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,60 +21,43 @@
         android:id="@+id/textViewUsername"
         android:layout_width="245dp"
         android:layout_height="57dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="@string/userNameText"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewInfoRegister" />
 
     <EditText
         android:id="@+id/textViewPassword"
         android:layout_width="245dp"
         android:layout_height="57dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/passText"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewUsername" />
 
     <EditText
         android:id="@+id/textViewPassword2"
         android:layout_width="245dp"
         android:layout_height="57dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="@string/verificare_parola"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPassword" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewInfoRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/rounded_text_view_green"
-        android:gravity="center"
-        android:onClick="onClickToLogin"
-        android:padding="5dp"
-        android:text="@string/info_register_page_bottom"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
-
-    <TextView
-        android:id="@+id/textViewInfoRegister"
-        android:layout_width="245dp"
-        android:layout_height="98dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="90dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="@string/info_register_page_top"
@@ -90,9 +73,24 @@
         android:layout_width="214dp"
         android:layout_height="45dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="96dp"
         android:text="@string/termeni_conditii"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPassword2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minWidth="10dp"
+        android:minHeight="10dp"
+        android:padding="4dp"
+        android:text="@string/info_register_page_bottom"
+        android:textAllCaps="false"
+        android:onClick="onClickToLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

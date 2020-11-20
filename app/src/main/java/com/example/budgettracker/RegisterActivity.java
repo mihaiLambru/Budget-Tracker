@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class RegisterActivity extends AppCompatActivity {
 
-    private final int reqCodeRegisterActivity=101;
+    private final int reqCodeRegisterActivity = 101;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

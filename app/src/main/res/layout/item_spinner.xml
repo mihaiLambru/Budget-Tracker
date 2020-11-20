@@ -31,14 +31,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="30dp"
+        android:layout_width="25dp"
         android:layout_height="20dp"
         android:layout_marginStart="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textViewMonedaCont"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
 
     <TextView
         android:id="@+id/textViewMonedaCont"
@@ -46,7 +47,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
         android:fontFamily="sans-serif-medium"
-        android:textColor="@color/color_eur"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textViewSumaCont"

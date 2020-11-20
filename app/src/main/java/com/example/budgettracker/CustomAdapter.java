@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -32,21 +33,28 @@ public class CustomAdapter extends ArrayAdapter<Cont> {
         TextView textViewNumeCont = convertView.findViewById(R.id.textViewNumeCont);
         TextView textViewSumaCont = convertView.findViewById(R.id.textViewSumaCont);
         TextView textViewMonedaCont = convertView.findViewById(R.id.textViewMonedaCont);
+        ImageView imageViewMoneda = convertView.findViewById(R.id.imageView);
 
         Cont cont = getItem(position);
 
         textViewNumeCont.setText(cont.getNume());
         textViewSumaCont.setText(String.format("%.2f", cont.getSuma()));
+
         String moneda = cont.getMoneda().toLowerCase();
 
-        if (moneda.equals("eur")) {
-            textViewMonedaCont.setTextColor(getContext().getResources().getColor(R.color.color_eur));
-        }
-        else if(moneda.equals("usd")) {
-            textViewMonedaCont.setTextColor(getContext().getResources().getColor(R.color.color_usd));
-        }
-        else if(moneda.equals("ron")) {
-            textViewMonedaCont.setTextColor(getContext().getResources().getColor(R.color.color_ron));
+        switch (moneda) {
+            case "eur":
+                textViewMonedaCont.setTextColor(getContext().getResources().getColor(R.color.color_eur));
+                imageViewMoneda.setImageResource(R.drawable.eur);
+                break;
+            case "usd":
+                textViewMonedaCont.setTextColor(getContext().getResources().getColor(R.color.color_usd));
+                imageViewMoneda.setImageResource(R.drawable.usd);
+                break;
+            case "ron":
+                textViewMonedaCont.setTextColor(getContext().getResources().getColor(R.color.color_ron));
+                imageViewMoneda.setImageResource(R.drawable.ron);
+                break;
         }
 
         textViewMonedaCont.setText(moneda.toUpperCase());

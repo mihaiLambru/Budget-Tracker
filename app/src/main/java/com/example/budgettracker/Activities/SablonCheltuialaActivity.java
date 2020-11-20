@@ -1,8 +1,10 @@
-package com.example.budgettracker;
+package com.example.budgettracker.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.budgettracker.R;
 
 public class SablonCheltuialaActivity extends AppCompatActivity {
 

@@ -1,10 +1,12 @@
-package com.example.budgettracker;
+package com.example.budgettracker.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.budgettracker.R;
 
 public class LoginActivity extends AppCompatActivity {
 

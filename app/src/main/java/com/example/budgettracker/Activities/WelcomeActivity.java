@@ -1,10 +1,12 @@
-package com.example.budgettracker;
+package com.example.budgettracker.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.budgettracker.R;
 
 public class WelcomeActivity extends AppCompatActivity {
 

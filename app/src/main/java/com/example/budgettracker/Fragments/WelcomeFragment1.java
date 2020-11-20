@@ -1,4 +1,4 @@
-package com.example.budgettracker;
+package com.example.budgettracker.Fragments;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -15,6 +15,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+
+import com.example.budgettracker.R;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.

@@ -24,5 +24,21 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="cont_curent">Cont curent: </string>
     <string name="continua">Continuă</string>
+    <string name="tranzactie">Introduceți detaliile tranzacției</string>
+    <string name="tip_tranzactie_text">Tip tranzacție: </string>
+    <string name="suma">Sumă:</string>
+    <string name="finalizeaza_tranzactia">Finalizează tranzacția</string>
 
+    <string-array name="Monede">
+        <item>RON</item>
+        <item>EURO</item>
+        <item>USD</item>
+    </string-array>
+
+    <string-array name="tip_tranzactie">
+        <item>Venit</item>
+        <item>Cheltuială</item>
+    </string-array>
+
+    <string name="info_statistici">Grafic cheltuieli</string>
 </resources>

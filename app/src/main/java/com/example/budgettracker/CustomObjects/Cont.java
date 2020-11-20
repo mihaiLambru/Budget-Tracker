@@ -1,12 +1,9 @@
-package com.example.budgettracker;
-
-import android.content.Context;
+package com.example.budgettracker.CustomObjects;
 
 public class Cont {
     private String nume;
     private double suma;
     private String moneda;
-   // private int imagine;
 
     public Cont(String nume, double suma, String moneda) {
         this.nume = nume;
@@ -26,8 +23,15 @@ public class Cont {
         return moneda;
     }
 
-    /*public int getImagine() {
-        return imagine;
-    }*/
+    public void setNume(String nume) {
+        this.nume = nume;
+    }
 
+    public void setSuma(double suma) {
+        this.suma = suma;
+    }
+
+    public void setMoneda(String moneda) {
+        this.moneda = moneda;
+    }
 }

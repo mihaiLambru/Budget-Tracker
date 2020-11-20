@@ -1,12 +1,13 @@
-package com.example.budgettracker;
+package com.example.budgettracker.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.budgettracker.R;
 
 public class RegisterActivity extends AppCompatActivity {
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SablonCheltuialaActivity">
+    tools:context=".Activities.SablonCheltuialaActivity">
     <androidx.core.widget.NestedScrollView
         android:id="@+id/EditareContScroll"
         android:layout_width="match_parent"

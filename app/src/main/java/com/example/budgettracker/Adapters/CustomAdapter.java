@@ -1,13 +1,15 @@
-package com.example.budgettracker;
+package com.example.budgettracker.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.budgettracker.CustomObjects.Cont;
+import com.example.budgettracker.R;
 
 import java.util.List;
 

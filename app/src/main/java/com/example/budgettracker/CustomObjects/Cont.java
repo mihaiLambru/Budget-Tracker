@@ -1,6 +1,9 @@
 package com.example.budgettracker.CustomObjects;
 
-public class Cont {
+
+import java.io.Serializable;
+
+public class Cont implements Serializable {
     private String nume;
     private double suma;
     private String moneda;

@@ -15,8 +15,11 @@
     <string name="BeneficiarValue">Beneficiar</string>
     <string name="BeneficiarText">Beneficiar</string>
     <string name="NotăText">Notă</string>
-    <string name="info_register_page_bottom">Aveți deja cont? Dați click aici!</string>
+
     <string name="info_register_page_top">Înregistrare</string>
+    <string name="info_register_page_bottom">Aveți deja cont? Dați click aici!</string>
+    <string name="info_login_page_top">Autentificare</string>
+    <string name="info_login_page_bottom">Nu aveți cont? Apasați aici!</string>
     <string name="termeni_conditii">Accept termenii si conditiile</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -31,7 +34,7 @@
 
     <string-array name="Monede">
         <item>RON</item>
-        <item>EURO</item>
+        <item>EUR</item>
         <item>USD</item>
     </string-array>
 
@@ -41,4 +44,5 @@
     </string-array>
 
     <string name="info_statistici">Grafic cheltuieli</string>
+
 </resources>

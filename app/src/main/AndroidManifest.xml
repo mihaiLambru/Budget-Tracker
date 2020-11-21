@@ -9,24 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/CustomTheme">
-        <activity android:name=".Activities.StatisticsActivity">
-
-        </activity>
-        <activity android:name=".Activities.TranzactieActivity">
-
-        </activity>
+        <activity android:name=".Activities.ListaConturiActivity" />
+        <activity android:name=".Activities.StatisticsActivity" />
+        <activity android:name=".Activities.TranzactieActivity" />
         <activity android:name=".Activities.MainActivity" />
-        <activity android:name=".Activities.WelcomeActivity">
+        <activity android:name=".Activities.WelcomeActivity" />
+        <activity android:name=".Activities.SablonCheltuialaActivity" />
+        <activity android:name=".Activities.EditareContActivity" />
+        <activity android:name=".Activities.LoginActivity" />
+        <activity android:name=".Activities.RegisterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.SablonCheltuialaActivity" />
-        <activity android:name=".Activities.EditareContActivity" />
-        <activity android:name=".Activities.LoginActivity" />
-        <activity android:name=".Activities.RegisterActivity" />
     </application>
 
 </manifest>

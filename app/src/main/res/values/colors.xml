@@ -14,5 +14,12 @@
     <color name="color_eur">#1470CC</color>
     <color name="color_usd">#298C2F</color>
     <color name="color_ron">#CC1F1F</color>
-    <color name="red">#DA0404</color>
+
+    <color name="color_alimente">#FF3D00</color>
+    <color name="color_cumparaturi">#4EC2F8</color>
+    <color name="color_locuinta">#FEA92B</color>
+    <color name="color_transport">#78909C</color>
+    <color name="color_vehicul">#AA05FD</color>
+    <color name="color_divertisment">#64DC16</color>
+
 </resources>

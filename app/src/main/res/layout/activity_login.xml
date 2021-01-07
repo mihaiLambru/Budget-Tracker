@@ -10,12 +10,12 @@
         android:id="@+id/buttonLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:onClick="onClickLogin"
         android:text="@string/autenButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPasswordLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
 
     <TextView
         android:id="@+id/textViewInfoLogin"
@@ -27,18 +27,18 @@
         android:textColor="@color/black"
         android:textSize="23sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textViewUsernameLogin"
+        app:layout_constraintBottom_toTopOf="@+id/editTextEmailLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
 
     <EditText
-        android:id="@+id/textViewUsernameLogin"
+        android:id="@+id/editTextEmailLogin"
         android:layout_width="245dp"
         android:layout_height="57dp"
         android:ems="10"
-        android:hint="@string/userNameText"
+        android:hint="@string/email"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
         app:layout_constraintVertical_bias="0.31" />
 
     <EditText
-        android:id="@+id/textViewPasswordLogin"
+        android:id="@+id/editTextPasswordLogin"
         android:layout_width="245dp"
         android:layout_height="57dp"
         android:layout_marginTop="8dp"
@@ -56,7 +56,7 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewUsernameLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailLogin" />
 
     <Button
         android:id="@+id/buttonInfoLoginBottom"
@@ -72,5 +72,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="214dp"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:text="@string/retine_pass_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordLogin" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.TypefaceSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -12,6 +17,7 @@ import android.widget.Spinner;
 
 import com.example.budgettracker.Adapters.CustomAdapter;
 import com.example.budgettracker.CustomObjects.Cont;
+import com.example.budgettracker.CustomObjects.Tranzactie;
 import com.example.budgettracker.R;
 
 import java.io.Serializable;
@@ -19,7 +25,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    public static final int MENIU_STATISTICI = 0;
+    private static final int MENIU_STATISTICI = 0;
+    private static final int MENIU_SETARI_CONT = 1;
+    private static final int MENIU_LOG_OUT = 2;
     private List<Cont> listaTest;
 
     @Override
@@ -28,12 +36,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listaTest = new ArrayList<>();
-        Cont cont1 = new Cont("Cont1", 10000,"EUR");
-        Cont cont2 = new Cont("Cont2", 700,"RON");
-        Cont cont3 = new Cont("Cont3", 8000, "USD");
+        Cont cont1 = new Cont(1, "Cont1", 10000,"EUR", 1);
+        Cont cont2 = new Cont(2, "Cont2", 1800,"USD", 1);
+        Cont cont3 = new Cont(3, "Cont3", 120000,"RON", 1);;
         listaTest.add(cont1);
         listaTest.add(cont2);
         listaTest.add(cont3);
+
 
         Spinner spinner = findViewById(R.id.spinner);
         CustomAdapter customAdapter = new CustomAdapter(this, listaTest);
@@ -55,13 +64,33 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         menu.add(Menu.NONE, MENIU_STATISTICI, 0, "Statistici cont");
+        menu.add(Menu.NONE, MENIU_SETARI_CONT, 1, "Setari cont");
+        menu.add(Menu.NONE, MENIU_LOG_OUT, 2, "Logout");
+
+        for(int i = 0; i < menu.size(); i++) {
+            MenuItem item = menu.getItem(i);
+            SpannableString spanString = new SpannableString(menu.getItem(i).getTitle().toString());
+            int colorId = this.getResources().getColor(R.color.colorCustomPrimary);
+            spanString.setSpan(new ForegroundColorSpan(colorId), 0,     spanString.length(), 0);
+            item.setTitle(spanString);
+        }
         return true;
     }
 
+
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        if(item.getItemId() == MENIU_STATISTICI) {
+        if (item.getItemId() == MENIU_STATISTICI) {
             startActivity(new Intent(this, StatisticsActivity.class));
+        }
+        if (item.getItemId() == MENIU_SETARI_CONT) {
+            //de revenit, in activitatea aia apelez update
+            //si delete
+            //startActivity(new Intent(this, ));
+        }
+        if (item.getItemId() == MENIU_LOG_OUT) {
+            //DE REVENIT
         }
         return true;
     }

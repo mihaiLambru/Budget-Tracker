@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Budget Tracker</string>
-    <string name="userNameText">Utilizator</string>
+    <string name="userNameText">Nume utilizator</string>
+    <string name="email">Email</string>
     <string name="passText">Parolă</string>
     <string name="verificare_parola">Verificare parolă</string>
     <string name="conectareButton">Conectare</string>
@@ -20,7 +21,8 @@
     <string name="info_register_page_bottom">Aveți deja cont? Dați click aici!</string>
     <string name="info_login_page_top">Autentificare</string>
     <string name="info_login_page_bottom">Nu aveți cont? Apasați aici!</string>
-    <string name="termeni_conditii">Accept termenii si conditiile</string>
+    <string name="termeni_conditii">Accept termenii si conditiile*</string>
+    <string name="retine_pass_name">Reține numele si parola</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dummy_button">Dummy Button</string>
@@ -45,4 +47,7 @@
 
     <string name="info_statistici">Grafic cheltuieli</string>
 
+    <string name="mesaj_welcome">Bine ati venit!</string>
+    <string name="info_welcome">Aici vă puteti gestiona bugetul într-o manieră inovativă</string>
+    <string name="categorie">Categorie:</string>
 </resources>

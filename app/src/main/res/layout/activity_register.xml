@@ -15,10 +15,10 @@
         android:text="@string/inregButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxRemember" />
 
     <EditText
-        android:id="@+id/textViewUsername"
+        android:id="@+id/editTextUsername"
         android:layout_width="245dp"
         android:layout_height="57dp"
         android:layout_marginTop="16dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textViewInfoRegister" />
 
     <EditText
-        android:id="@+id/textViewPassword"
+        android:id="@+id/editTextPassword"
         android:layout_width="245dp"
         android:layout_height="57dp"
         android:layout_marginTop="8dp"
@@ -39,10 +39,10 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewUsername" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
 
     <EditText
-        android:id="@+id/textViewPassword2"
+        android:id="@+id/editTextPassword2"
         android:layout_width="245dp"
         android:layout_height="57dp"
         android:layout_marginTop="8dp"
@@ -51,13 +51,13 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <TextView
         android:id="@+id/textViewInfoRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="@string/info_register_page_top"
@@ -69,14 +69,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxTermeni"
         android:layout_width="214dp"
         android:layout_height="45dp"
         android:layout_marginTop="8dp"
         android:text="@string/termeni_conditii"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewPassword2" />
+        app:layout_constraintEnd_toEndOf="@+id/editTextPassword2"
+        app:layout_constraintStart_toStartOf="@+id/editTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword2" />
 
     <Button
         android:id="@+id/buttonInfoRegisterBottom"
@@ -92,5 +92,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRemember"
+        android:layout_width="214dp"
+        android:layout_height="45dp"
+        android:text="@string/retine_pass_name"
+        app:layout_constraintEnd_toEndOf="@+id/checkBoxTermeni"
+        app:layout_constraintStart_toStartOf="@+id/checkBoxTermeni"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTermeni" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="245dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

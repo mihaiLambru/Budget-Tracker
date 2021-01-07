@@ -41,7 +41,7 @@
         android:gravity="center"
         android:text="@string/tip_tranzactie_text"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewInfoTranzactie" />
 
@@ -52,12 +52,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
+        android:gravity="center"
         android:text="@string/suma"
         android:textColor="@color/black"
-        android:textSize="25sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTipTranzactie"
-        android:gravity="center"/>
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipTranzactie" />
 
     <EditText
         android:id="@+id/editTextSuma"
@@ -81,4 +81,25 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextSuma"
         app:layout_constraintVertical_bias="0.39" />
+
+    <TextView
+        android:id="@+id/textViewCategorie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/categorie"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSuma" />
+
+    <Spinner
+        android:id="@+id/spinnerCategorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintStart_toEndOf="@+id/textViewCategorie2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSuma" />
 </androidx.constraintlayout.widget.ConstraintLayout>

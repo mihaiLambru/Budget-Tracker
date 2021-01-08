@@ -1,9 +1,11 @@
-package com.example.budgettracker.Database;
+package com.example.budgettracker.Database.AsyncOperations;
 
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.example.budgettracker.CustomObjects.User;
+import com.example.budgettracker.Database.Entities.User;
+import com.example.budgettracker.Database.DAO.UserDAO;
+import com.example.budgettracker.Database.LocalDatabase;
 
 public class AsyncWrapperUser {
     private UserDAO userDAO;

@@ -86,8 +86,9 @@
         android:minWidth="10dp"
         android:minHeight="10dp"
         android:padding="4dp"
-        android:text="@string/info_register_page_bottom"
         android:textAllCaps="false"
+        android:text="@string/info_register_page_bottom"
+
         android:onClick="onClickToLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

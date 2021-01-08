@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
 
-import com.example.budgettracker.Adapters.CustomAdapter;
-import com.example.budgettracker.CustomObjects.Cont;
+import com.example.budgettracker.Adapters.AdapterConturi;
+import com.example.budgettracker.Database.Entities.Cont;
 import com.example.budgettracker.R;
 
 import java.util.List;
@@ -22,10 +22,10 @@ public class ListaConturiActivity extends AppCompatActivity {
         Intent intent = getIntent();
         List<Cont> list = (List<Cont>) intent.getSerializableExtra("lista");
 
-        CustomAdapter customAdapter = new CustomAdapter(this, list);
+        AdapterConturi adapterConturi = new AdapterConturi(this, list);
 
         ListView listView = findViewById(R.id.listViewConturi);
 
-        listView.setAdapter(customAdapter);
+        listView.setAdapter(adapterConturi);
     }
 }

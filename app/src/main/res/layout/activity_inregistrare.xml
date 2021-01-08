@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.TranzactieActivity">
+    tools:context=".Activities.InregistrareActivity">
 
     <TextView
-        android:id="@+id/textViewInfoTranzactie"
+        android:id="@+id/textViewInfoInregistrare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="66dp"
         android:gravity="center"
-        android:text="@string/tranzactie"
+        android:text="@string/inregistrare"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -21,29 +21,30 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinnerTipTranzactie"
+        android:id="@+id/spinnerTipInregistrare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:entries="@array/tip_tranzactie"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="59dp"
+        android:entries="@array/tip_inregistrare"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintStart_toEndOf="@+id/textViewTipTranzactie"
-        app:layout_constraintTop_toBottomOf="@+id/textViewInfoTranzactie" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewTipInregistrare"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfoInregistrare" />
 
     <android.widget.TextView
-        android:id="@+id/textViewTipTranzactie"
+        android:id="@+id/textViewTipInregistrare"
         style="CustomTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="58dp"
         android:gravity="center"
-        android:text="@string/tip_tranzactie_text"
+        android:text="@string/tip_inregistrare_text"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewInfoTranzactie" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewInfoInregistrare" />
 
     <android.widget.TextView
         android:id="@+id/textViewSuma"
@@ -57,7 +58,7 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewTipTranzactie" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipInregistrare" />
 
     <EditText
         android:id="@+id/editTextSuma"
@@ -74,7 +75,7 @@
         android:id="@+id/buttonTranzactie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/finalizeaza_tranzactia"
+        android:text="@string/finalizeaza_inregistrarea"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

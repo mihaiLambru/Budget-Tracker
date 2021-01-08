@@ -22,4 +22,8 @@
     <color name="color_vehicul">#AA05FD</color>
     <color name="color_divertisment">#64DC16</color>
 
+    <color name="color_dividend">#5871FC</color>
+    <color name="color_chirie">#FE4080</color>
+    <color name="color_salariu">#03BEA5</color>
+    <color name="color_proiecte">#FACB56</color>
 </resources>

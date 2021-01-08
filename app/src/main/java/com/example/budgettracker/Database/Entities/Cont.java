@@ -1,4 +1,4 @@
-package com.example.budgettracker.CustomObjects;
+package com.example.budgettracker.Database.Entities;
 
 
 import androidx.room.Entity;
@@ -12,22 +12,22 @@ import java.io.Serializable;
         childColumns = "idUser",
         onDelete = ForeignKey.CASCADE))
 public class Cont implements Serializable {
-    @PrimaryKey(autoGenerate = true)
-    private int id;
+    @PrimaryKey
+    private int idCont;
     private String nume;
     private double suma;
     private String moneda;
     private int idUser;
 
-    @Ignore
-    public Cont(int id, String nume, double suma, String moneda, int idUser) {
-        this.id = id;
+
+    public Cont(int idCont, String nume, double suma, String moneda, int idUser) {
+        this.idCont = idCont;
         this.nume = nume;
         this.suma = suma;
         this.moneda = moneda;
         this.idUser = idUser;
     }
-
+    @Ignore
     public Cont(String nume, double suma, String moneda, int idUser) {
         this.nume = nume;
         this.suma = suma;
@@ -67,12 +67,12 @@ public class Cont implements Serializable {
         this.idUser = idUser;
     }
 
-    public int getId() {
-        return id;
+    public int getIdCont() {
+        return idCont;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdCont(int idCont) {
+        this.idCont = idCont;
     }
 
 }

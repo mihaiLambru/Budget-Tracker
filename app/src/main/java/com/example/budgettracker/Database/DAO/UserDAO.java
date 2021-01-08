@@ -1,4 +1,4 @@
-package com.example.budgettracker.Database;
+package com.example.budgettracker.Database.DAO;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
@@ -6,7 +6,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.budgettracker.CustomObjects.User;
+import com.example.budgettracker.Database.Entities.User;
 
 @Dao
 public interface UserDAO {

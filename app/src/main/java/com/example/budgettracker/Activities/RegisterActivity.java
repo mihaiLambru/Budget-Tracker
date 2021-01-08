@@ -2,6 +2,7 @@ package com.example.budgettracker.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,6 +10,12 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import com.example.budgettracker.Database.AsyncOperations.AsyncWrapperCont;
+import com.example.budgettracker.Database.AsyncOperations.AsyncWrapperInregistrare;
+import com.example.budgettracker.Database.AsyncOperations.AsyncWrapperUser;
+import com.example.budgettracker.Database.Entities.Cont;
+import com.example.budgettracker.Database.Entities.Inregistrare;
+import com.example.budgettracker.Database.Entities.User;
 import com.example.budgettracker.R;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -32,9 +39,12 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         //test
-        //new AsyncWrapperUser(getApplicationContext()).insert(new User(2, "alex"));
-        //new AsyncWrapperCont(getApplicationContext()).insert(new Cont("Cont1", 20.00, "RON", 2));
-
+       /* Context ctx = getApplicationContext();
+        new AsyncWrapperUser(ctx).insert(new User(2, "alex"));
+        new AsyncWrapperCont(ctx).insert(new Cont(1,"Cont1", 20.00, "RON", 2));
+        new AsyncWrapperInregistrare(ctx).insert(new Inregistrare(1, 10.00, 1,
+                Inregistrare.CategorieCheltuiala.ALIMENTE,
+                Inregistrare.TipInregistrare.CHELTUIALA));*/
         textViewUserName = findViewById(R.id.editTextUsername);
         textViewPassword = findViewById(R.id.editTextPassword);
     }

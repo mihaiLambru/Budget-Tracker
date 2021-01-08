@@ -5,28 +5,25 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-
 import com.example.budgettracker.Activities.EditareContActivity;
 import com.example.budgettracker.Activities.ListaConturiActivity;
 import com.example.budgettracker.Activities.MainActivity;
-import com.example.budgettracker.CustomObjects.Cont;
+import com.example.budgettracker.Database.Entities.Cont;
 import com.example.budgettracker.R;
 
 import java.util.List;
 
-public class CustomAdapter extends BaseAdapter {
+public class AdapterConturi extends BaseAdapter {
     private final Context context;
     private final List<Cont> list;
     private int item;
 
-    public CustomAdapter(Context context, List<Cont> list) {
+    public AdapterConturi(Context context, List<Cont> list) {
         this.list = list;
         this.context = context;
 

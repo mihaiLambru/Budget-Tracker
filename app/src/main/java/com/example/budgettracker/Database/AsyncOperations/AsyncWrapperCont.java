@@ -1,9 +1,11 @@
-package com.example.budgettracker.Database;
+package com.example.budgettracker.Database.AsyncOperations;
 
 import android.content.Context;
 import android.os.AsyncTask;
 
-import com.example.budgettracker.CustomObjects.Cont;
+import com.example.budgettracker.Database.Entities.Cont;
+import com.example.budgettracker.Database.DAO.ContDAO;
+import com.example.budgettracker.Database.LocalDatabase;
 
 public class AsyncWrapperCont {
 

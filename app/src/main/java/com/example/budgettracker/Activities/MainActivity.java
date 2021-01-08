@@ -4,20 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.style.ForegroundColorSpan;
-import android.text.style.TypefaceSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Spinner;
 
-import com.example.budgettracker.Adapters.CustomAdapter;
-import com.example.budgettracker.CustomObjects.Cont;
-import com.example.budgettracker.CustomObjects.Tranzactie;
+import com.example.budgettracker.Adapters.AdapterConturi;
+import com.example.budgettracker.Database.Entities.Cont;
 import com.example.budgettracker.R;
 
 import java.io.Serializable;
@@ -44,14 +40,15 @@ public class MainActivity extends AppCompatActivity {
         listaTest.add(cont3);
 
 
-        Spinner spinner = findViewById(R.id.spinner);
-        CustomAdapter customAdapter = new CustomAdapter(this, listaTest);
 
-        spinner.setAdapter(customAdapter);
+        Spinner spinner = findViewById(R.id.spinner);
+        AdapterConturi adapterConturi = new AdapterConturi(this, listaTest);
+
+        spinner.setAdapter(adapterConturi);
     }
 
     public void deschideTranzactia(View view) {
-        startActivity(new Intent(this, TranzactieActivity.class));
+        startActivity(new Intent(this, InregistrareActivity.class));
     }
 
     public void onClickSettings(View view) {

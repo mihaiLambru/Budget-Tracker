@@ -14,7 +14,7 @@
         </activity>
         <activity android:name=".Activities.ListaConturiActivity" />
         <activity android:name=".Activities.StatisticsActivity" />
-        <activity android:name=".Activities.TranzactieActivity" />
+        <activity android:name=".Activities.InregistrareActivity" />
         <activity android:name=".Activities.MainActivity" />
         <activity android:name=".Activities.WelcomeActivity" />
         <activity android:name=".Activities.SablonCheltuialaActivity" />

@@ -29,10 +29,10 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="cont_curent">Cont curent: </string>
     <string name="continua">Continuă</string>
-    <string name="tranzactie">Introduceți detaliile tranzacției</string>
-    <string name="tip_tranzactie_text">Tip tranzacție: </string>
+    <string name="inregistrare">Introduceți detaliile înregistrării</string>
+    <string name="tip_inregistrare_text">Tip înregistrare: </string>
     <string name="suma">Sumă:</string>
-    <string name="finalizeaza_tranzactia">Finalizează tranzacția</string>
+    <string name="finalizeaza_inregistrarea">Finalizează înregistrarea</string>
 
     <string-array name="Monede">
         <item>RON</item>
@@ -40,7 +40,7 @@
         <item>USD</item>
     </string-array>
 
-    <string-array name="tip_tranzactie">
+    <string-array name="tip_inregistrare">
         <item>Venit</item>
         <item>Cheltuială</item>
     </string-array>
@@ -50,4 +50,5 @@
     <string name="mesaj_welcome">Bine ati venit!</string>
     <string name="info_welcome">Aici vă puteti gestiona bugetul într-o manieră inovativă</string>
     <string name="categorie">Categorie:</string>
+    <string name="adauga_cont">Adaugă cont</string>
 </resources>

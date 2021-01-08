@@ -8,16 +8,16 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.budgettracker.CustomObjects.CategorieTranzactie;
+import com.example.budgettracker.CustomObjects.CategorieInregistrare;
 import com.example.budgettracker.R;
 
 import java.util.List;
 
-public class CustomAdapterCategorie extends BaseAdapter {
+public class AdapterCategorie extends BaseAdapter {
     private Context context;
-    private List<CategorieTranzactie> lista;
+    private List<CategorieInregistrare> lista;
 
-    public CustomAdapterCategorie(Context context, List<CategorieTranzactie> lista) {
+    public AdapterCategorie(Context context, List<CategorieInregistrare> lista) {
         this.context = context;
         this.lista = lista;
     }
@@ -44,9 +44,9 @@ public class CustomAdapterCategorie extends BaseAdapter {
         TextView textView = view.findViewById(R.id.textViewCategorie);
         ImageView imageView = view.findViewById(R.id.imageViewCategorie);
 
-        CategorieTranzactie categorieTranzactie = (CategorieTranzactie) getItem(i);
-        imageView.setImageResource(categorieTranzactie.getIdImagine());
-        String text = categorieTranzactie.getCategorie().toString().toLowerCase();
+        CategorieInregistrare categorieInregistrare = (CategorieInregistrare) getItem(i);
+        imageView.setImageResource(categorieInregistrare.getIdImagine());
+        String text = categorieInregistrare.getCategorie().toString().toLowerCase();
         text = text.substring(0,1).toUpperCase() + text.substring(1);
         textView.setText(text);
         return view;

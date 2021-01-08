@@ -1,4 +1,4 @@
-package com.example.budgettracker.CustomObjects;
+package com.example.budgettracker.Database.Entities;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
@@ -10,11 +10,12 @@ public class User implements Serializable {
     @PrimaryKey
     private int idUser;
     private String nume;
-    //de pus si email, probabil de schimbat cheia primara
+    private String email;
 
-    public User(int idUser, String nume) {
+    public User(int idUser, String nume, String email) {
         this.idUser = idUser;
         this.nume = nume;
+        this.email = email;
     }
 
     public int getIdUser() {
@@ -31,6 +32,14 @@ public class User implements Serializable {
 
     public void setNume(String nume) {
         this.nume = nume;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     @Override

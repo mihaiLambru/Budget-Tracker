@@ -51,4 +51,9 @@
     <string name="info_welcome">Aici vă puteti gestiona bugetul într-o manieră inovativă</string>
     <string name="categorie">Categorie:</string>
     <string name="adauga_cont">Adaugă cont</string>
+    <string name="alegeti_actiunea">Alegeți acțiunea</string>
+    <string name="stergeti_contul">Ștergeți contul</string>
+    <string name="modificati_numele">Modificați numele</string>
+    <string name="venituri"> Venituri</string>
+    <string name="cheltuieli">Cheltuieli</string>
 </resources>

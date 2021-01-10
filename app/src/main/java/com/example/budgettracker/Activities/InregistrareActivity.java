@@ -21,6 +21,9 @@ public class InregistrareActivity extends AppCompatActivity {
         setContentView(R.layout.activity_inregistrare);
 
         Spinner spinnerTipInregistrare = findViewById(R.id.spinnerTipInregistrare);
+        AdapterCategorie adapterCategorie = new AdapterCategorie(this);
+        spinnerTipInregistrare.setAdapter(adapterCategorie);
+
         final Spinner spinnerCategorie = findViewById(R.id.spinnerCategorie);
         spinnerTipInregistrare.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

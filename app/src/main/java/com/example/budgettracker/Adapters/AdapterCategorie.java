@@ -16,20 +16,35 @@ import java.util.List;
 public class AdapterCategorie extends BaseAdapter {
     private Context context;
     private List<CategorieInregistrare> lista;
+    private final boolean flag;
 
+    //true-categorie false-tip inregistrare
     public AdapterCategorie(Context context, List<CategorieInregistrare> lista) {
         this.context = context;
         this.lista = lista;
+        flag = true;
     }
+
+    public AdapterCategorie(Context context) {
+        this.context = context;
+        flag = false;
+    }
+
 
     @Override
     public int getCount() {
-        return lista.size();
+        if (flag)
+            return lista.size();
+        return 2;
     }
 
     @Override
     public Object getItem(int i) {
-        return lista.get(i);
+        if (flag)
+            return lista.get(i);
+        if (i == 0)
+            return "Venit";
+        return "Cheltuiala";
     }
 
     @Override
@@ -44,11 +59,24 @@ public class AdapterCategorie extends BaseAdapter {
         TextView textView = view.findViewById(R.id.textViewCategorie);
         ImageView imageView = view.findViewById(R.id.imageViewCategorie);
 
-        CategorieInregistrare categorieInregistrare = (CategorieInregistrare) getItem(i);
-        imageView.setImageResource(categorieInregistrare.getIdImagine());
-        String text = categorieInregistrare.getCategorie().toString().toLowerCase();
-        text = text.substring(0,1).toUpperCase() + text.substring(1);
-        textView.setText(text);
+        if (flag) {
+            CategorieInregistrare categorieInregistrare = (CategorieInregistrare) getItem(i);
+            imageView.setImageResource(categorieInregistrare.getIdImagine());
+            String text = categorieInregistrare.getCategorie().toString().toLowerCase();
+            text = text.substring(0, 1).toUpperCase() + text.substring(1);
+            textView.setText(text);
+        }
+        else {
+            if (i == 0) {
+                textView.setText("Venit");
+                imageView.setImageResource(R.drawable.ic_plus);
+            }
+            else if (i == 1) {
+                textView.setText("Cheltuiala");
+                imageView.setImageResource(R.drawable.ic_minus);
+            }
+
+        }
         return view;
     }
 }

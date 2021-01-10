@@ -26,4 +26,14 @@ public class Converters {
         return Inregistrare.CategorieCheltuiala.valueOf(categorie);
     }
 
+
+    @TypeConverter
+    public static String categorieVenitToString(Inregistrare.CategorieVenit categorieVenit) {
+        return categorieVenit.toString();
+    }
+
+    @TypeConverter
+    public static Inregistrare.CategorieVenit stringToCategorieVenit(String categorie) {
+        return Inregistrare.CategorieVenit.valueOf(categorie);
+    }
 }

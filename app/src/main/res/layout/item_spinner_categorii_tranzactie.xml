@@ -7,7 +7,7 @@
 
     <TextView
         android:id="@+id/textViewCategorie"
-        android:layout_width="100dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
@@ -23,6 +23,7 @@
         android:id="@+id/imageViewCategorie"
         android:layout_width="30dp"
         android:layout_height="60dp"
+        android:layout_marginStart="8dp"
         android:layout_weight="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

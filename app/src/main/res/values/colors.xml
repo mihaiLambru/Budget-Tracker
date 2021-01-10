@@ -26,4 +26,9 @@
     <color name="color_chirie">#FE4080</color>
     <color name="color_salariu">#03BEA5</color>
     <color name="color_proiecte">#FACB56</color>
+
+    <color name="green">#00A600</color>
+    <color name="red">#FF0000</color>
+    <color name="red_alert">#ff0033</color>
+    <color name="bright_gray">#fafafa</color>
 </resources>

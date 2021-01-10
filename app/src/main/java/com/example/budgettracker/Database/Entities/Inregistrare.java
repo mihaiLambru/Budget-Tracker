@@ -2,6 +2,7 @@ package com.example.budgettracker.Database.Entities;
 
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "Inregistrari", foreignKeys = @ForeignKey(entity = Cont.class,
@@ -24,17 +25,29 @@ public class Inregistrare {
 
     @PrimaryKey(autoGenerate = true)
     private int idInregistrare;
-    private double suma;
+    private float suma;
     private int idCont;
 
     private CategorieCheltuiala categorieCheltuiala;
+    private CategorieVenit categorieVenit;
     private TipInregistrare tipInregistrare;
 
-    public Inregistrare(int idInregistrare, double suma, int idCont, CategorieCheltuiala categorieCheltuiala, TipInregistrare tipInregistrare) {
+    public Inregistrare(int idInregistrare, float suma, int idCont, CategorieCheltuiala categorieCheltuiala, TipInregistrare tipInregistrare) {
         this.idInregistrare = idInregistrare;
         this.suma = suma;
         this.idCont = idCont;
         this.categorieCheltuiala = categorieCheltuiala;
+        this.categorieVenit = null;
+        this.tipInregistrare = tipInregistrare;
+    }
+
+    @Ignore
+    public Inregistrare(int idInregistrare, float suma, int idCont, CategorieVenit categorieVenit, TipInregistrare tipInregistrare) {
+        this.idInregistrare = idInregistrare;
+        this.suma = suma;
+        this.idCont = idCont;
+        this.categorieVenit = categorieVenit;
+        this.categorieCheltuiala = null;
         this.tipInregistrare = tipInregistrare;
     }
 
@@ -70,11 +83,19 @@ public class Inregistrare {
         this.idInregistrare = idInregistrare;
     }
 
-    public double getSuma() {
+    public float getSuma() {
         return suma;
     }
 
-    public void setSuma(double suma) {
+    public void setSuma(float suma) {
         this.suma = suma;
+    }
+
+    public CategorieVenit getCategorieVenit() {
+        return categorieVenit;
+    }
+
+    public void setCategorieVenit(CategorieVenit categorieVenit) {
+        this.categorieVenit = categorieVenit;
     }
 }

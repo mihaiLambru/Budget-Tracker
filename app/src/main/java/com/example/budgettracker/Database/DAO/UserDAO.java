@@ -20,5 +20,5 @@ public interface UserDAO {
     void delete(User user);
 
     @Query("SELECT * FROM Users WHERE idUser LIKE :idUser")
-    User select(int idUser);
+    User select(Integer idUser);
 }

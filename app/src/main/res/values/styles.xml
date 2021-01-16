@@ -15,14 +15,6 @@
         <item name="colorOnSecondary">@color/white</item>
     </style>
 
-    <style name="NightTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <item name="colorPrimary">@color/colorCustomPrimary</item>
-        <item name="colorPrimaryDark">@color/colorCustomDarkPrimary</item>
-        <item name="colorAccent">@color/colorCustomAccent</item>
-        <item name="colorSecondary">@color/colorCustomAccent</item>
-        <item name="colorOnSecondary">@color/white</item>
-    </style>
-
     <style name="CustomTextView">
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">20sp</item>

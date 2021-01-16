@@ -8,6 +8,8 @@ import androidx.room.Update;
 
 import com.example.budgettracker.Database.Entities.Inregistrare;
 
+import java.util.List;
+
 @Dao
 public interface InregistrareDAO {
 
@@ -23,5 +25,7 @@ public interface InregistrareDAO {
     @Query("SELECT * FROM Inregistrari WHERE idInregistrare LIKE :idInregistrare")
     Inregistrare select(int idInregistrare);
 
-    //de mai pus un select
+    @Query("SELECT * FROM Inregistrari WHERE idCont LIKE :idCont")
+    List<Inregistrare> selectLista(int idCont);
+
 }

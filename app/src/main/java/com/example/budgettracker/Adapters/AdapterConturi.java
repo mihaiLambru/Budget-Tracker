@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.budgettracker.Activities.EditareContActivity;
 import com.example.budgettracker.Activities.ListaConturiActivity;
 import com.example.budgettracker.Activities.MainActivity;
+import com.example.budgettracker.Database.AsyncOperations.AsyncWrapperCont;
 import com.example.budgettracker.Database.Entities.Cont;
 import com.example.budgettracker.R;
 
@@ -42,7 +43,9 @@ public class AdapterConturi extends BaseAdapter {
 
     @Override
     public Object getItem(int i) {
-        return list.get(i);
+        if (i >= 0 && i < list.size())
+            return list.get(i);
+        return null;
     }
 
     @Override
@@ -64,8 +67,8 @@ public class AdapterConturi extends BaseAdapter {
         LayoutInflater layoutInflater = LayoutInflater.from(context);
         convertView =  layoutInflater.inflate(item, parent, false);
 
-        TextView textViewNumeCont = convertView.findViewById(R.id.textViewNumeCont);
-        TextView textViewSumaCont = convertView.findViewById(R.id.textViewSumaCont);
+        final TextView textViewNumeCont = convertView.findViewById(R.id.textViewNumeCont);
+        final TextView textViewSumaCont = convertView.findViewById(R.id.textViewSumaCont);
         TextView textViewMonedaCont = convertView.findViewById(R.id.textViewMonedaCont);
         ImageView imageViewMoneda = convertView.findViewById(R.id.imageView);
 
@@ -76,8 +79,10 @@ public class AdapterConturi extends BaseAdapter {
             buttonSettingsAccount.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //temporar
-                    context.startActivity(new Intent(context, EditareContActivity.class));
+                    Intent intent = new Intent(context, EditareContActivity.class);
+                    intent.putExtra("flag", false);
+                    intent.putExtra("cont", (Cont) getItem(position));
+                    context.startActivity(intent);
                 }
             });
 
@@ -85,6 +90,8 @@ public class AdapterConturi extends BaseAdapter {
                 @Override
                 public void onClick(View view) {
                     list.remove(position);
+                    Cont cont = (Cont) getItem(position);
+                    new AsyncWrapperCont(context).delete(cont);
                     notifyDataSetChanged();
                 }
             });

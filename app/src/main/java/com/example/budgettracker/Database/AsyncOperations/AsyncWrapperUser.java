@@ -2,7 +2,9 @@ package com.example.budgettracker.Database.AsyncOperations;
 
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 
+import com.example.budgettracker.Activities.RegisterActivity;
 import com.example.budgettracker.Database.Entities.User;
 import com.example.budgettracker.Database.DAO.UserDAO;
 import com.example.budgettracker.Database.LocalDatabase;
@@ -18,8 +20,10 @@ public class AsyncWrapperUser {
     private static class InsertUserAsyncTask extends AsyncTask<User, Void, Void> {
         private UserDAO userDAO;
 
-        private InsertUserAsyncTask(UserDAO userDao) {
+        private InsertUserAsyncTask(UserDAO userDao)
+        {
             this.userDAO = userDao;
+
         }
 
         @Override
@@ -27,6 +31,8 @@ public class AsyncWrapperUser {
             userDAO.insert(users[0]);
             return null;
         }
+
+
     }
 
     private static class UpdateUserAsyncTask extends AsyncTask<User, Void, Void> {
@@ -65,14 +71,13 @@ public class AsyncWrapperUser {
         }
 
         @Override
-        protected User doInBackground(Integer... id) {
+        protected User doInBackground(Integer ...id) {
             User user = userDAO.select(id[0]);
             return user;
         }
 
         @Override
         protected void onPostExecute(User user) {
-            //de revenit
             super.onPostExecute(user);
         }
     }
@@ -89,8 +94,8 @@ public class AsyncWrapperUser {
         new DeleteUserAsyncTask(userDAO).execute(user);
     }
 
-    public void select(Integer id) {
-        new SelectUserAsyncTask(userDAO).execute(id);
+    public void select(Integer idUser) {
+        new SelectUserAsyncTask(userDAO).execute(idUser);
     }
 
 }

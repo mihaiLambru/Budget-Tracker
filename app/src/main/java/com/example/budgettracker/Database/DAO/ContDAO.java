@@ -8,6 +8,8 @@ import androidx.room.Update;
 
 import com.example.budgettracker.Database.Entities.Cont;
 
+import java.util.List;
+
 @Dao
 public interface ContDAO {
     @Insert
@@ -22,6 +24,7 @@ public interface ContDAO {
     @Query("SELECT * FROM Conturi WHERE idCont LIKE :id")
     Cont select(int id);
 
-    //mai trebuie un query
+    @Query("SELECT * FROM Conturi WHERE idUser LIKE :id")
+    List<Cont> selectList(int id);
 
 }

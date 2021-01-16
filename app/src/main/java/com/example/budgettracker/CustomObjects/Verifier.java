@@ -13,29 +13,29 @@ public class Verifier {
         String textPassword = passwordEditText.getText().toString().trim();
 
         if (textEmail.isEmpty() && textPassword.isEmpty()) {
-            Toasty.info(context, "Please insert your email and password", Toasty.LENGTH_SHORT).show();
+            Toasty.info(context, "Va rugam introduceti emailul si parola", Toasty.LENGTH_SHORT).show();
             emailEditText.requestFocus();
             return false;
         }
         else if (textEmail.isEmpty()) {
-            Toasty.info(context, "Please insert your email", Toasty.LENGTH_SHORT).show();
+            Toasty.info(context, "Va rugam introduceti adresa de email", Toasty.LENGTH_SHORT).show();
             emailEditText.requestFocus();
             return false;
         }
         else if (textPassword.isEmpty()) {
-            Toasty.info(context, "Please insert a password", Toasty.LENGTH_SHORT).show();
+            Toasty.info(context, "Va rugam introduceti o parola", Toasty.LENGTH_SHORT).show();
             passwordEditText.requestFocus();
             return false;
         }
 
         if (passwordEditText.length() < 6) {
-            Toasty.info(context, "The password should have more than 6 characters", Toasty.LENGTH_SHORT).show();
+            Toasty.info(context, "Parola trebuie sa aiba mai mult de 6 caractere", Toasty.LENGTH_SHORT).show();
             passwordEditText.requestFocus();
             return false;
         }
 
         if (!Patterns.EMAIL_ADDRESS.matcher(textEmail).matches()) {
-            Toasty.info(context, "Please enter a valid email", Toasty.LENGTH_SHORT).show();
+            Toasty.info(context, "Va rugam introduceti un email valid", Toasty.LENGTH_SHORT).show();
             emailEditText.requestFocus();
             return false;
         }

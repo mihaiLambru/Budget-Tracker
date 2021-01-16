@@ -7,6 +7,7 @@ import com.example.budgettracker.Database.Entities.Inregistrare;
 public class Converters {
     @TypeConverter
     public static String tipInregistrareToString(Inregistrare.TipInregistrare tipInregistrare) {
+
         return tipInregistrare.toString();
     }
 
@@ -18,6 +19,9 @@ public class Converters {
 
     @TypeConverter
     public static String categorieCheltuialaToString(Inregistrare.CategorieCheltuiala categorieCheltuiala) {
+        if (categorieCheltuiala == null) {
+            return "NULL";
+        }
         return categorieCheltuiala.toString();
     }
 
@@ -29,6 +33,9 @@ public class Converters {
 
     @TypeConverter
     public static String categorieVenitToString(Inregistrare.CategorieVenit categorieVenit) {
+        if (categorieVenit== null) {
+            return "NULL";
+        }
         return categorieVenit.toString();
     }
 

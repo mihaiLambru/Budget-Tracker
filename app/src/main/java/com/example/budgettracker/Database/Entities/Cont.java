@@ -12,7 +12,7 @@ import java.io.Serializable;
         childColumns = "idUser",
         onDelete = ForeignKey.CASCADE))
 public class Cont implements Serializable {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     private int idCont;
     private String nume;
     private double suma;
@@ -20,14 +20,6 @@ public class Cont implements Serializable {
     private int idUser;
 
 
-    public Cont(int idCont, String nume, double suma, String moneda, int idUser) {
-        this.idCont = idCont;
-        this.nume = nume;
-        this.suma = suma;
-        this.moneda = moneda;
-        this.idUser = idUser;
-    }
-    @Ignore
     public Cont(String nume, double suma, String moneda, int idUser) {
         this.nume = nume;
         this.suma = suma;

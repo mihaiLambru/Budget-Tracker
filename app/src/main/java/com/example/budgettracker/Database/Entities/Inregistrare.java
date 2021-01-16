@@ -12,11 +12,11 @@ import androidx.room.PrimaryKey;
 public class Inregistrare {
 
     public enum CategorieCheltuiala {
-        ALIMENTE, CUMPARATURI, LOCUINTA, TRANSPORT, VEHICUL, DIVERTISMENT
+        ALIMENTE, CUMPARATURI, LOCUINTA, TRANSPORT, VEHICUL, DIVERTISMENT, NULL
     }
 
     public enum CategorieVenit {
-        SALARIU, CHIRII, PROIECTE, DIVIDENDE
+        SALARIU, CHIRII, PROIECTE, DIVIDENDE, NULL
     }
 
     public enum TipInregistrare {
@@ -32,24 +32,27 @@ public class Inregistrare {
     private CategorieVenit categorieVenit;
     private TipInregistrare tipInregistrare;
 
-    public Inregistrare(int idInregistrare, float suma, int idCont, CategorieCheltuiala categorieCheltuiala, TipInregistrare tipInregistrare) {
-        this.idInregistrare = idInregistrare;
+    private static int id = 0;
+
+    public Inregistrare(float suma, int idCont, CategorieCheltuiala categorieCheltuiala, TipInregistrare tipInregistrare) {
         this.suma = suma;
         this.idCont = idCont;
         this.categorieCheltuiala = categorieCheltuiala;
         this.categorieVenit = null;
         this.tipInregistrare = tipInregistrare;
+
     }
 
     @Ignore
-    public Inregistrare(int idInregistrare, float suma, int idCont, CategorieVenit categorieVenit, TipInregistrare tipInregistrare) {
-        this.idInregistrare = idInregistrare;
+    public Inregistrare(float suma, int idCont, CategorieVenit categorieVenit, TipInregistrare tipInregistrare) {
         this.suma = suma;
         this.idCont = idCont;
         this.categorieVenit = categorieVenit;
         this.categorieCheltuiala = null;
         this.tipInregistrare = tipInregistrare;
     }
+
+
 
     public int getIdCont() {
         return idCont;

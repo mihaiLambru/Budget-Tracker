@@ -47,8 +47,9 @@
 
     <string name="info_statistici">Grafic cheltuieli</string>
 
-    <string name="mesaj_welcome">Bine ati venit!</string>
-    <string name="info_welcome">Aici vă puteti gestiona bugetul într-o manieră inovativă</string>
+    <string name="mesaj_welcome">Bine ați venit!</string>
+    <string name="info_welcome">Aici vă puteti gestiona bugetul într-o manieră facilă
+        având posibilitatea de a urmări distribuția cheltuielilor și veniturilor.</string>
     <string name="categorie">Categorie:</string>
     <string name="adauga_cont">Adaugă cont</string>
     <string name="alegeti_actiunea">Alegeți acțiunea</string>
@@ -56,4 +57,10 @@
     <string name="modificati_numele">Modificați numele</string>
     <string name="venituri"> Venituri</string>
     <string name="cheltuieli">Cheltuieli</string>
+    <string name = "nume_cont">Nume cont:</string>
+    <string name ="nume">Nume:</string>
+    <string name="moneda">Monedă:</string>
+    <string name="ok">Ok</string>
+    <string name="incepeti_acum">Începeți acum</string>
+    <string name="creati_cont">Creați un cont</string>
 </resources>
